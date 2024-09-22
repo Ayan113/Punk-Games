@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-45deg, #1c1c1c, #121212, #1c1c1c, #121212);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    background-color: #1c1c1c; /* Darker navbar background */
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust logo size */
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text for links */
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b70de2; /* Accent color on hover */
+}
+
+#big-text {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Custom CSS for dropdown hover effect */
+.nav-item.dropdown:hover .dropdown-menu,
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust as needed */
+    background-color: #1c1c1c; /* Dark background for dropdown */
+    border: none;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #ffffff; /* White text for dropdown items */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #b70de2; /* Accent color on hover */
+}
+
+.dropdown-header {
+    color: #b70de2; /* Accent color for headers */
+    font-weight: bold;
+}
+
+/* Animation for Sign In and Download buttons */
+.btn-primary, .btn-secondary {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #b70de2; 
+    border-color: #b70de2;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #9a0bb8; /* Darker shade for hover */
+    color: #ffffff; /* Ensure text color remains white */
+}
+    
+.container {
+    background-color: #1c1c1c; /* Dark background for container */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #2a2a2a; /* Dark background for cards */
+    border: none;
+}
+
+.card-title {
+    color: #b70de2; /* Accent color for card titles */
+}
+
+footer {
+    background-color: #1c1c1c; /* Dark background for footer */
+    color: #ffffff; /* White text */
+}
+
+footer a {
+    color: #ffffff; 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    color: #ffffff; 
+}   display: block;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    color: #ffffff; 
+}
+
+
+.glow-text {
+    font-size: 2.5em;
+    color: #ffffff; 
+    text-align: center;
+    animation: glow 1.5s ease-in-out infinite alternate, move 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+    }
+}
+
+@keyframes move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
